@@ -9,11 +9,11 @@ github_username: anki-code
 has_aliases: false
 has_events: false
 package_manager: setuptools
-project_name: jump-to-dir
-project_package_name: jump_to_dir
-project_repo_name: xontrib-jump-to-dir
-project_short_description: Jump to the directory by name.
+project_name: clp
+project_package_name: clp
+project_repo_name: xontrib-clp
+project_short_description: Copy output to clipboard.
 pure_py: true
-py_module_name: xontrib_jump_to_dir
+py_module_name: xontrib_clp
 version: 0.0.1
 
