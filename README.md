@@ -18,7 +18,7 @@ xpip install xontrib-clp
 ## Usage
 
 ```xsh
-echo hello | clp
+echo hello | clp   # Copy "hello\n" to clipboard
 ```
 
 ## Credits
