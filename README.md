@@ -1,5 +1,5 @@
 <p align="center">
-Copy output to clipboard.
+Copy output to clipboard. Cross-platform.
 </p>
 
 <p align="center">  
