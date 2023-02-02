@@ -25,12 +25,14 @@ echo hello | clp   # Copy "hello\n" to clipboard
 #### [pyperclip](https://pypi.org/project/pyperclip/)
 ```xsh
 $XONTRIB_CLP_ALIAS = 'pyperclip'  # default
+xontrib load clp
 echo hello | clp   # Copy "hello\n" to clipboard using pyperclip
 ```
 
 #### shutil
 ```xsh
 $XONTRIB_CLP_ALIAS = 'shutil'  # default
+xontrib load clp
 echo hello | clp   # Copy "hello\n" to clipboard using platform-depending tool: pbcopy, xclip, etc
 ```
 
