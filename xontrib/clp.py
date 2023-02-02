@@ -1,6 +1,8 @@
 from xonsh.built_ins import XSH
 
-if XSH.env.get('XONTRIB_CLP_PYTHON', True):
+_clp_alias = XSH.env.get('XONTRIB_CLP_ALIAS', 'pyperclip')
+
+if _clp_alias == 'pyperclip':
     import pyperclip as _pclp
 
     def _clp(args, stdin, stdout):
@@ -15,7 +17,7 @@ if XSH.env.get('XONTRIB_CLP_PYTHON', True):
     aliases['clp'] = _clp    
     del _clp
 
-else:
+elif _clp_alias == 'shutil':
     import shutil as _shutil
 
     if _shutil.which('pbcopy'):  # DARWIN
@@ -35,3 +37,5 @@ else:
         elif ON_WINDOWS:
             print('xontrib-clp: clip.exe not found')
 
+else:
+    print(f'xontrib-clp: unknown alias: {_clp_alias}')
