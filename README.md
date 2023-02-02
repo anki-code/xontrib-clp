@@ -17,6 +17,7 @@ xpip install -U git+https://github.com/anki-code/xontrib-clp
 ## Usage
 
 ```xsh
+xontrib load clp
 echo hello | clp   # Copy "hello\n" to clipboard
 ```
 
