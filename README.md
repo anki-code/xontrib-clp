@@ -31,7 +31,7 @@ echo hello | clp   # Copy "hello\n" to clipboard using pyperclip
 #### shutil
 ```xsh
 $XONTRIB_CLP_ALIAS = 'shutil'  # default
-echo hello | clp   # Copy "hello\n" to clipboard using platform-depending tool: pbcopy, xclip, clip.exe, etc
+echo hello | clp   # Copy "hello\n" to clipboard using platform-depending tool: pbcopy, xclip, etc
 ```
 
 ## Credits
