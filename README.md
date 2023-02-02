@@ -20,6 +20,20 @@ xpip install -U git+https://github.com/anki-code/xontrib-clp
 echo hello | clp   # Copy "hello\n" to clipboard
 ```
 
+## Use cases
+
+#### [pyperclip](https://pypi.org/project/pyperclip/)
+```xsh
+$XONTRIB_CLP_ALIAS = 'pyperclip'  # default
+echo hello | clp   # Copy "hello\n" to clipboard using pyperclip
+```
+
+#### shutil
+```xsh
+$XONTRIB_CLP_ALIAS = 'shutil'  # default
+echo hello | clp   # Copy "hello\n" to clipboard using platform-depending tool: pbcopy, xclip, clip.exe, etc
+```
+
 ## Credits
 
 This package was created with [xontrib template](https://github.com/xonsh/xontrib-template).
