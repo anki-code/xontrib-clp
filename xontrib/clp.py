@@ -1,3 +1,5 @@
+"""Copy output to clipboard. Cross-platform. """
+
 from xonsh.built_ins import XSH
 
 _clp_alias = XSH.env.get('XONTRIB_CLP_ALIAS', 'pyperclip')
