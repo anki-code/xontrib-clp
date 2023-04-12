@@ -33,9 +33,9 @@ echo hello | clp   # Copy "hello\n" to clipboard using pyperclip
 
 #### shutil
 ```xsh
-$XONTRIB_CLP_ALIAS = 'shutil'  # default
+$XONTRIB_CLP_ALIAS = 'shutil'
 xontrib load clp
-echo hello | clp   # Copy "hello\n" to clipboard using platform-depending tool: pbcopy, xclip, etc
+echo hello | clp   # Copy "hello\n" to clipboard using platform-depending tool: pbcopy, xclip, clip.exe, etc
 ```
 
 ## Credits
