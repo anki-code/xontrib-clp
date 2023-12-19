@@ -31,7 +31,7 @@ elif _clp_alias == 'shutil':
     elif _shutil.which('CLIP.EXE'):  # WINDOWS
         aliases['clp'] = 'CLIP.EXE'
     else:
-        from xonsh.platform import ON_LINUX, ON_DARWIN #, ON_WSL, ON_CYGWIN, ON_MSYS, ON_POSIX, ON_FREEBSD, ON_DRAGONFLY, ON_NETBSD, ON_OPENBSD
+        from xonsh.platform import ON_LINUX, ON_DARWIN, ON_WINDOWS #, ON_WSL, ON_CYGWIN, ON_MSYS, ON_POSIX, ON_FREEBSD, ON_DRAGONFLY, ON_NETBSD, ON_OPENBSD
         if ON_LINUX:
             print('xontrib-clp: install xclip')
         elif ON_DARWIN:
